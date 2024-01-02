@@ -1,0 +1,429 @@
+@media only screen and (min-width: 300px) {
+    .main {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .main {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    background-color: rgb(220, 166, 147);
+    color: rgb(135, 1, 1);
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    text-align: center;
+    margin-right: 5%;
+
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 140px 255px 255px 140px;
+    grid-template-rows: 140px 255px 255px 140px;
+    position: absolute;
+    /*padding: 20px;*/
+    margin-left: 20px;
+    grid-gap: 15px; 
+    z-index: 0;
+    /*
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    position: absolute;
+    padding: 20px; */
+}
+
+.pizza {
+    max-width: 600%;
+    max-height: 600%;
+    display: grid;
+    float: left;
+    padding: 20px;
+    size: 900px;
+    z-index: 0;
+    /*
+    max-width: 1800%;
+    max-height: 1800%;
+    display: grid;
+    float: left;
+    size: 900px; */
+}
+
+#pepperoniOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    grid-area: 2 / 2;
+    grid-area: 2 / 3;
+    grid-area: 3 / 2;
+    grid-area: 3 / 3;
+    z-index: 1;
+}
+#mushroomsOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    grid-area: 5 / 5;
+    z-index: 1;
+}
+#peppersOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+#olivesOnBase {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+#parmahamOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+#eggOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    grid-area: 3 / 3;
+    z-index: 1;
+}
+#buffalomozzarellaOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+#rocketOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+}
+#onionOnBase {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+    display: none;
+    z-index: 1;
+    /*
+    max-width: 15%;
+    max-height: 15%;
+    grid-area: 4 / 5;
+    object-fit: cover;
+    position: absolute;
+    display: none;*/
+}
+
+.navContainer #navbar {
+    display: block;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 1300px;
+    margin-right: 5px;
+}
+
+img {
+    padding: 10px;
+    margin-left: 50px;
+    align-items: center;
+}
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(220, 166, 147);
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: rgb(135, 1, 1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    float: right;
+}
+  
+  /* Change the link color on hover 
+li a:hover {
+    background-color: rgb(201, 62, 11);
+    color: white;
+}
+*/
+
+.toppings {
+    max-width: 50%;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+}
+/*
+picture .toppings {
+    flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+
+}
+*/
+#pepperoni {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#mushrooms {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#peppers {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#olives {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#parmaHam {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#egg {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#buffaloMozzarella {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#rocket {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#onion {
+    max-width: 50px;
+    max-height: 50px;
+    /*
+    flex-direction: column;
+    justify-content: flex-end;
+    */
+}
+
+button {
+    float: right;
+    color: rgb(135, 1, 1);
+    border-radius: 8px;
+    padding: 3px 4px;
+    margin-left: 10px;
+    background: white;
+    border: 1px solid rgb(135, 1, 1);
+}
+
+button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background: rgb(135, 1, 1);
+        color: white;
+        border: 1px solid rgb(135, 1, 1);
+        transition: all 200ms ease;
+        padding: 3px 4px;
+        border-radius: 8px;
+      }
+
+
+
+
+
+
+
+
+
+/*
+.pizza {
+    max-width: 1800%;
+    max-height: 1800%;
+    display: -ms-inline-grid;
+    float: left;
+}
+
+.toppings #navbar {
+    font-size: 18px;
+    outline: darkred;
+    float: right; 
+    /*
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    text-decoration: none;
+    font-size: 18px;
+    float: right;
+    letter-spacing: 5px;
+    justify-content: space-between;
+    */
+    /*
+}
+
+img .toppings {
+    max-width: 10px;
+    max-height: 10px;
+    display: inline;
+    float: right;
+
+} 
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    background-color: rgb(220, 166, 147);
+    float: right; 
+  }
+  
+li a {
+    display: block;
+    color:rgb(135, 1, 1;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color on hover */
+  /*
+li a:hover {
+    background-color: #555;
+    color: white;
+}*/
+
+/*
+
+#pepperoniOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    grid-area: test;
+    grid-area: 7 / 9;
+    object-fit: cover;
+    position: absolute;
+    display: none;
+}
+
+#mushroomsOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#peppersOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#olivesOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#parmahamOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#eggOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#buffalomozzarellaOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#rocketOnBase {
+    max-width: 15%;
+    max-height: 15%;
+    display: none;
+}
+#onionOnBase {
+    max-width: 80%;
+    max-height: 80%;
+    display: none;
+}
+
+button {
+    float: right;
+    color: rgb(135, 1, 1);
+    border-radius: 8px;
+    padding: 3px 4px;
+    background: white;
+    border: 1px solid rgb(135, 1, 1);
+}
+button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background: rgb(135, 1, 1);
+        color: white;
+        border: 1px solid rgb(135, 1, 1);
+        transition: all 200ms ease;
+        padding: 3px 4px;
+        border-radius: 8px;
+      }
+      */

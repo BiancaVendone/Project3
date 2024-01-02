@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza Builder JS Project</title>
+    <h1>Pizza First Girls 🍕</h1>
+    <h2>Build your own pizza!</h2> 
+</head>
+<body>
+ <div class="container">
+      <!--pizza base image to add toppings to as you order-->
+      <img class="pizza" src="IMAGES/PizzaBase.png" alt="PizzaBase"/>
+    </div>
+    <div id="toppingsOnBase">
+        <img id="pepperoniOnBase" src="IMAGES/Pepperoni.png" alt="pepperoni">
+        <img id="mushroomsOnBase" src="IMAGES/Mushrooms.png">
+        <img id="peppersOnBase" src="IMAGES/Peppers.png">
+        <img id="olivesOnBase" src="IMAGES/Olives.png">
+        <img id="parmahamOnBase" src="IMAGES/Parmaham.png">
+        <img id="eggOnBase" src="IMAGES/Egg.png">
+        <img id="buffalomozzarellaOnBase" src="IMAGES/BuffaloMozzarella.png">
+        <img id="rocketOnBase" src="IMAGES/Rocket.png">
+        <img id="onionOnBase" src="IMAGES/Onion.png">
+    </div>
+    <div>
+      <!--<div class="navbar-wrapper">
+        <div id="navbar">-->
+          <!--pizza toppings navigation bar-->
+         
+          <div class="navContainer">
+          <nav class="toppings" id="navbar">
+            <h3>Toppings</h3>
+            <div>
+              <br>
+                <img class="toppings" id="pepperoni" src="IMAGES/Pepperoni.png" alt="Pepperoni" />
+                <p>Pepperoni <button type="button" id="pepperoniButton">Add</button></p>
+                <br>
+                <img class="toppings" id="mushrooms" src="IMAGES/Mushrooms.png" alt="Mushrooms" />
+                <p>Mushrooms <button type="button" id="mushroomButton">Add</button></p>
+                <br>
+                <img class="toppings" id="peppers" src="IMAGES/Peppers.png" alt="Peppers" />
+                <p>Peppers <button type="button" id="pepperButton">Add</button></p>
+                <br>
+                <img class="toppings" id="olives" src="IMAGES/Olives.png" alt="Olives" />
+                <p>Olives <button type="button" id="oliveButton">Add</button></p>
+                <br>
+                <img class="toppings" id="parmaHam" src="IMAGES/Parmaham.png" alt="Parma Ham" />
+                <p>Parma Ham <button type="button" id="parmaHamButton">Add</button></p>
+                <br>
+                <img class="toppings" id="egg" src="IMAGES/Egg.png" alt="Egg" />
+                <p>Egg <button type="button" id="eggButton">Add</button></p>
+                <br>
+                <img class="toppings" id="buffaloMozzarella" src="IMAGES/BuffaloMozzarella.png" alt="Buffalo Mozzarella" />
+                <p>Buffalo Mozzarella <button type="button" id="buffaloMozzarellaButton">Add</button></p>
+                <br>
+                <img class="toppings" id="rocket" src="IMAGES/Rocket.png" alt="Rocket" />
+                <p>Rocket <button type="button" id="rocketButton">Add</button></p>
+                <br>
+                <img class="toppings" id="onion" src="IMAGES/Onion.png" alt="Onion" />
+                <p>Onion <button type="button" id="onionButton">Add</button></p>
+                <br>
+            </div>
+            </nav>
+            <!--<div>
+             
+            <ul>
+              <div>
+                <h3>Toppings</h3>
+               </div>
+              <li>
+                  <img class="toppings" id="pepperoni" src="IMAGES/Pepperoni.png" alt="Pepperoni" />
+                  <a href="#Pepperoni">Pepperoni</a><button type="button" id="pepperoniButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="Mushrooms" src="IMAGES/Mushrooms.png" alt="Mushrooms" />
+                  <a href="#Mushrooms">Mushrooms</a><button type="button" id="mushroomButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="peppers" src="IMAGES/Peppers.png" alt="Peppers" />
+                  <a href="#Peppers">Peppers</a><button type="button" id="pepperButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="olives" src="IMAGES/Olives.png" alt="Olives" />
+                  <a href="#Olives">Olives</a><button type="button" id="oliveButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="parmaHam" src="IMAGES/Parmaham.png" alt="Parma Ham" />
+                  <a href="#Parma Ham">Parma Ham</a><button type="button" id="parmaHamButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="egg" src="IMAGES/Egg.png" alt="Egg" />
+                  <a href="#Egg">Egg</a><button type="button" id="eggButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="buffaloMozzarella" src="IMAGES/BuffaloMozzarella.png" alt="Buffalo Mozzarella" /> 
+                  <a href="#Buffalo Mozzarella">Buffalo Mozzarella</a><button type="button" id="buffaloMozzarellaButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="rocket" src="IMAGES/Rocket.png" alt="Rocket" /> 
+                  <a href="#Rocket">Rocket</a><button type="button" id="rocketButton">Add</button></li>
+              <li>
+                  <img class="toppings" id="onion" src="IMAGES/Onion.png" alt="Onion" /> 
+                  <a href="#Onion">Onion</a><button type="button" id="onionButton">Add</button></li>
+            </ul>
+          </div>-->
+            
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+      <!--<ul>
+              <li>
+                <picture>
+                  <img class="toppings" id="pepperoni" src="IMAGES/Pepperoni.png" alt="Pepperoni" />
+                </picture><a href="#Pepperoni">Pepperoni</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="Mushrooms" src="IMAGES/Mushrooms.png" alt="Mushrooms" />
+                </picture><a href="#Mushrooms">Mushrooms</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="peppers" src="IMAGES/Peppers.png" alt="Peppers" />
+                </picture><a href="#Peppers">Peppers</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="olives" src="IMAGES/Olives.png" alt="Olives" />
+                </picture><a href="#Olives">Olives</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="parmaHam" src="IMAGES/Parmaham.png" alt="Parma Ham" />
+                </picture><a href="#Parma Ham">Parma Ham</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="egg" src="IMAGES/Egg.png" alt="Egg" />
+                </picture><a href="#Egg">Egg</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="buffaloMozzarella" src="IMAGES/BuffaloMozzarella.png" alt="Buffalo Mozzarella" /> 
+                </picture><a href="#Buffalo Mozzarella">Buffalo Mozzarella</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="rocket" src="IMAGES/Rocket.png" alt="Rocket" /> 
+                </picture><a href="#Rocket">Rocket</a></li>
+              <li>
+                <picture>
+                  <img class="toppings" id="onion" src="IMAGES/Onion.png" alt="Onion" /> 
+                </picture><a href="#Onion">Onion</a></li>
+            </ul>-->
